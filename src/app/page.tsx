@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Circle, Monitor, TrendingUp, Link2, Compass, Home, CheckCircle, DollarSign, Rocket, Handshake, Gem, Clock, Twitter, Linkedin, Mail, MessageCircle } from "lucide-react"
 import Header from "@/components/Header"
 
 export default function LandingPage() {
@@ -12,103 +13,106 @@ export default function LandingPage() {
             <Header />
 
             {/* Hero Section */}
-            <section className="mx-auto">
-                <div className="max-w-[1024px] border-x-1 border-b-1 border-[#e0e1ea] px-3 py-20 flex flex-col items-center justify-between mx-auto">
-                    <Badge variant="secondary" className="mb-6">🟢 Currently Available</Badge>
+            <section className="py-24">
+                <div className="container mx-auto max-w-4xl px-6">
+                    <div className="text-center space-y-8">
+                        <Badge variant="secondary" className="mb-2">
+                            <Circle className="w-3 h-3 mr-2 fill-primary text-primary" />
+                            Currently Available
+                        </Badge>
 
-                    <h1 className="text-4xl md:text-6xl text-gray-900 text-center font-bold leading-tight mb-6">
-                        I handle the tech 💻 <br />
-                        You handle the 📈 <span className="text-primary">growth</span>
-                    </h1>
+                        <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
+                            I handle the tech
+                            <br />
+                            You handle the <span className="text-primary">growth</span>
+                        </h1>
 
-                    <p className="text-xl text-gray-600 max-w-2xl mx-auto text-center mb-8">
-                        Goodbye to tech headaches and hire one developer to handle it all who understands your education/travel business
-                    </p>
+                        <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                            Goodbye to tech headaches and hire one developer to handle it all who understands your education/travel business
+                        </p>
 
-                    <div className="pt-2">
-                        <Link href={"mailto:hello@anshupatel.in"}>
-                            <Button size="lg" className="px-10 py-4 text-lg font-semibold">
-                                Get FREE from Headaches
-                            </Button>
-                        </Link>
+                        <div className="pt-4">
+                            <Link href={"mailto:hello@anshupatel.in"}>
+                                <Button size="lg" className="text-lg px-8 py-6">
+                                    Get FREE from Headaches
+                                </Button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* Client Logo Carousel */}
-            <section className="mx-auto">
-                <div className="max-w-[1024px] border-x-1 border-b-1 border-[#e0e1ea] px-3 py-12 mx-auto">
-                    <div className="text-center mb-8">
-                        <p className="text-sm text-gray-500 font-medium">Trusted by startups and growing businesses</p>
+            {/* Client Trust Section */}
+            <section className="py-16 border-t">
+                <div className="container mx-auto max-w-4xl px-6">
+                    <div className="text-center mb-12">
+                        <p className="text-sm text-muted-foreground font-medium">Trusted by startups and growing businesses</p>
                     </div>
-                    <div className="flex items-center justify-center gap-12 opacity-60 overflow-hidden">
-                        <div className="flex items-center gap-12 animate-pulse">
-                            {/* Placeholder logos */}
-                            <div className="w-24 h-12 bg-gray-200 rounded flex items-center justify-center">
-                                <span className="text-xs text-gray-400">Logo 1</span>
-                            </div>
-                            <div className="w-24 h-12 bg-gray-200 rounded flex items-center justify-center">
-                                <span className="text-xs text-gray-400">Logo 2</span>
-                            </div>
-                            <div className="w-24 h-12 bg-gray-200 rounded flex items-center justify-center">
-                                <span className="text-xs text-gray-400">Logo 3</span>
-                            </div>
-                            <div className="w-24 h-12 bg-gray-200 rounded flex items-center justify-center">
-                                <span className="text-xs text-gray-400">Logo 4</span>
-                            </div>
-                            <div className="w-24 h-12 bg-gray-200 rounded flex items-center justify-center">
-                                <span className="text-xs text-gray-400">Logo 5</span>
-                            </div>
+                    <div className="flex flex-wrap items-center justify-center gap-6 opacity-60">
+                        <div className="w-24 h-12 bg-muted rounded-lg flex items-center justify-center">
+                            <span className="text-xs text-muted-foreground">Client 1</span>
+                        </div>
+                        <div className="w-24 h-12 bg-muted rounded-lg flex items-center justify-center">
+                            <span className="text-xs text-muted-foreground">Client 2</span>
+                        </div>
+                        <div className="w-24 h-12 bg-muted rounded-lg flex items-center justify-center">
+                            <span className="text-xs text-muted-foreground">Client 3</span>
+                        </div>
+                        <div className="w-24 h-12 bg-muted rounded-lg flex items-center justify-center">
+                            <span className="text-xs text-muted-foreground">Client 4</span>
+                        </div>
+                        <div className="w-24 h-12 bg-muted rounded-lg flex items-center justify-center">
+                            <span className="text-xs text-muted-foreground">Client 5</span>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Projects Section */}
-            <section className="mx-auto ">
-                <div className="max-w-[1024px] border-x-1 border-b-1 border-[#e0e1ea] px-3 py-16 flex flex-col items-center justify-between mx-auto">
-                    <div className="text-center mb-12">
+            <section className="py-24 border-t">
+                <div className="container mx-auto max-w-6xl px-6">
+                    <div className="text-center mb-16">
                         <Badge variant="secondary" className="mb-4">Projects</Badge>
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
-                            See how I helped businesses scale <br /> with tech + SEO.
+                        <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                            See how I helped businesses scale <br /> with tech + SEO
                         </h2>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-8 mb-16 w-full">
+                    <div className="grid md:grid-cols-3 gap-8 mb-12">
                         {/* BacklinkCRM */}
-                        <Card className="border-0 shadow-sm hover:shadow-lg transition-shadow bg-white py-0">
-                            <div className="aspect-video bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center">
-                                <div className="text-4xl">🔗</div>
+                        <Card className="border hover:shadow-lg transition-shadow">
+                            <div className="aspect-video bg-muted rounded-t-lg flex items-center justify-center">
+                                <Link2 className="w-16 h-16 text-primary" />
                             </div>
                             <CardContent className="p-6">
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">BacklinkCRM</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">
+                                <h3 className="text-xl font-bold text-foreground mb-3">BacklinkCRM</h3>
+                                <p className="text-muted-foreground text-sm leading-relaxed">
                                     A SaaS tool built for link-building agencies to manage backlinks, partners, and exchanges with ease.
                                 </p>
                             </CardContent>
                         </Card>
 
                         {/* CareerCompass */}
-                        <Card className="border-0 shadow-sm hover:shadow-lg transition-shadow bg-white py-0">
-                            <div className="aspect-video bg-gradient-to-br from-green-100 to-emerald-100 rounded-t-lg flex items-center justify-center">
-                                <div className="text-4xl">🧭</div>
+                        <Card className="border hover:shadow-lg transition-shadow">
+                            <div className="aspect-video bg-muted rounded-t-lg flex items-center justify-center">
+                                <Compass className="w-16 h-16 text-primary" />
                             </div>
                             <CardContent className="p-6">
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">CareerCompass</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">
+                                <h3 className="text-xl font-bold text-foreground mb-3">CareerCompass</h3>
+                                <p className="text-muted-foreground text-sm leading-relaxed">
                                     An AI-powered career quiz & recommendation system for students and job seekers.
                                 </p>
                             </CardContent>
                         </Card>
 
                         {/* RoofWalla */}
-                        <Card className="border-0 shadow-sm hover:shadow-lg transition-shadow bg-white py-0">
-                            <div className="aspect-video bg-gradient-to-br from-orange-100 to-red-100 rounded-t-lg flex items-center justify-center">
-                                <div className="text-4xl">🏠</div>
+                        <Card className="border hover:shadow-lg transition-shadow">
+                            <div className="aspect-video bg-muted rounded-t-lg flex items-center justify-center">
+                                <Home className="w-16 h-16 text-primary" />
                             </div>
                             <CardContent className="p-6">
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">RoofWalla</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">
+                                <h3 className="text-xl font-bold text-foreground mb-3">RoofWalla</h3>
+                                <p className="text-muted-foreground text-sm leading-relaxed">
                                     SEO-optimized WordPress site for a UK roofing company to generate more leads.
                                 </p>
                             </CardContent>
@@ -117,7 +121,7 @@ export default function LandingPage() {
 
                     <div className="text-center">
                         <Link href={"mailto:hello@anshupatel.in"}>
-                            <Button size="lg" className="px-8 py-3 text-lg font-semibold">
+                            <Button size="lg" className="px-8 py-3">
                                 Book your free review
                             </Button>
                         </Link>
@@ -126,210 +130,248 @@ export default function LandingPage() {
             </section>
 
             {/* Testimonial Section */}
-            <section className="mx-auto ">
-                <div className="max-w-[1024px] border-x-1  border-b-1 border-[#e0e1ea] px-3 py-16 flex flex-col items-center justify-between mx-auto">
-
-                    <div className="max-w-4xl mx-auto">
-                        <div className="border-0 p-0 shadow-lg relative overflow-hidden">
-                            <div className="p-8 md:p-12 text-center">
-                                {/* Profile Image with Badge */}
-                                <div className="relative inline-block mb-8">
-                                    <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center mx-auto">
-                                        <span className="text-2xl md:text-3xl">👤</span>
-                                    </div>
-                                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                                        <span className="text-white text-sm">✓</span>
-                                    </div>
+            <section className="py-24 bg-muted/30">
+                <div className="container mx-auto max-w-4xl px-6">
+                    <Card className="border-0 shadow-lg">
+                        <CardContent className="p-8 md:p-12 text-center">
+                            {/* Profile Image with Badge */}
+                            <div className="relative inline-block mb-8">
+                                <div className="w-16 h-16 md:w-20 md:h-20 bg-muted rounded-full flex items-center justify-center mx-auto">
+                                    <span className="text-2xl md:text-3xl">👤</span>
                                 </div>
-
-                                {/* Testimonial Quote */}
-                                <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8 font-medium">
-                                    "Working with Anshu was a turning point for our business. From building a solid backend to optimizing SEO for growth, his work was reliable, fast, and impactful. Highly recommended for any startup or agency that wants results."
-                                </blockquote>
-
-                                {/* Client Info */}
-                                <div className="text-center">
-                                    <div className="font-bold text-gray-900 text-lg mb-1">Anonymous Client</div>
-                                    <div className="text-gray-500">Startup Founder</div>
-                                </div>
-
-                                {/* Additional Client Avatars */}
-                                <div className="flex justify-center items-center mt-8 space-x-3">
-                                    <div className="w-10 h-10 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full flex items-center justify-center">
-                                        <span className="text-sm">👨</span>
-                                    </div>
-                                    <div className="w-10 h-10 bg-gradient-to-br from-green-200 to-green-300 rounded-full flex items-center justify-center">
-                                        <span className="text-sm">👩</span>
-                                    </div>
-                                    <div className="w-10 h-10 bg-gradient-to-br from-purple-200 to-purple-300 rounded-full flex items-center justify-center">
-                                        <span className="text-sm">👨</span>
-                                    </div>
-                                    <div className="w-10 h-10 bg-gradient-to-br from-pink-200 to-pink-300 rounded-full flex items-center justify-center">
-                                        <span className="text-sm">👩</span>
-                                    </div>
+                                <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                                    <CheckCircle className="w-4 h-4 text-primary-foreground" />
                                 </div>
                             </div>
-                        </div>
-                    </div>
+
+                            {/* Testimonial Quote */}
+                            <blockquote className="text-lg md:text-xl text-foreground leading-relaxed mb-8 font-medium">
+                                "Working with Anshu was a turning point for our business. From building a solid backend to optimizing SEO for growth, his work was reliable, fast, and impactful. Highly recommended for any startup or agency that wants results."
+                            </blockquote>
+
+                            {/* Client Info */}
+                            <div className="text-center">
+                                <div className="font-bold text-foreground text-lg mb-1">Anonymous Client</div>
+                                <div className="text-muted-foreground">Startup Founder</div>
+                            </div>
+
+                            {/* Additional Client Avatars */}
+                            <div className="flex justify-center items-center mt-8 space-x-3">
+                                <div className="w-10 h-10 bg-muted rounded-full flex items-center justify-center">
+                                    <span className="text-sm">👨</span>
+                                </div>
+                                <div className="w-10 h-10 bg-muted rounded-full flex items-center justify-center">
+                                    <span className="text-sm">👩</span>
+                                </div>
+                                <div className="w-10 h-10 bg-muted rounded-full flex items-center justify-center">
+                                    <span className="text-sm">👨</span>
+                                </div>
+                                <div className="w-10 h-10 bg-muted rounded-full flex items-center justify-center">
+                                    <span className="text-sm">👩</span>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
                 </div>
             </section>
 
             {/* Idea CTA */}
-            <section className="mx-auto">
-                <div className="max-w-[1024px] border-x-1 border-b-1 border-[#e0e1ea] px-3 py-16 flex flex-col items-center justify-between mx-auto">
-
-                    {/* Collaborate Badge */}
-                    <div className="mb-8">
-                        <Badge variant="outline" className="px-6 py-2 text-sm font-medium border-gray-300 text-gray-600 bg-white shadow-sm">
-                            🤝 Collaborate
+            <section className="py-24 border-t">
+                <div className="container mx-auto max-w-4xl px-6">
+                    <div className="text-center space-y-8">
+                        {/* Collaborate Badge */}
+                        <Badge variant="outline" className="px-6 py-2">
+                            <Handshake className="w-4 h-4 mr-2" />
+                            Collaborate
                         </Badge>
+
+                        {/* Main Heading */}
+                        <div className="space-y-2">
+                            <h2 className="text-4xl font-bold text-foreground leading-tight">
+                                Have an idea?
+                            </h2>
+                            <h2 className="text-4xl font-bold text-foreground leading-tight">
+                                Let's make it fire!
+                            </h2>
+                        </div>
+
+                        {/* Description */}
+                        <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                            Transform your idea with stellar design and user experience.
+                            Ready to innovate?
+                        </p>
+
+                        {/* CTA Button */}
+                        <div className="pt-4">
+                            <Link href={"mailto:hello@anshupatel.in"}>
+                                <Button size="lg" className="px-8 py-6">
+                                    Book your free review
+                                </Button>
+                            </Link>
+                        </div>
                     </div>
-
-                    {/* Main Heading */}
-                    <div className="text-center mb-4">
-                        <h2 className="text-4xl font-bold text-gray-900 leading-tight">
-                            Have an <span className="inline-block">💡</span> idea?
-                        </h2>
-                        <h2 className="text-4xl font-bold text-gray-900 leading-tight">
-                            Let's make it <span className="inline-block">🚀</span> fire!
-                        </h2>
-                    </div>
-
-                    {/* Description */}
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center mb-12 leading-relaxed">
-                        Transform your idea with stellar design and user experience. <br />
-                        Ready to innovate?
-                    </p>
-
-                    {/* CTA Button */}
-                    <div className="flex items-center justify-center gap-4">
-                        <Link href={"mailto:hello@anshupatel.in"}>
-                            <Button size="lg">
-                                Book your free review
-                            </Button>
-                        </Link>
-                    </div>
-
                 </div>
             </section>
 
             {/* Pricing / Offers Section */}
-            <section className="mx-auto">
-                <div className="max-w-[1024px] border-x-1 border-b-1 border-[#e0e1ea] px-3 py-16 flex flex-col items-center justify-between mx-auto">
+            <section className="py-24 border-t">
+                <div className="container mx-auto max-w-6xl px-6">
 
                     {/* Header */}
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-16">
                         <div className="flex items-center justify-center gap-2 mb-4">
-                            <div className="text-blue-500">💰</div>
-                            <span className="font-medium text-gray-700">Affordable solutions that scale with your business.</span>
+                            <DollarSign className="w-6 h-6 text-primary" />
+                            <span className="font-medium text-muted-foreground">Affordable solutions that scale with your business</span>
                         </div>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-2">Start your project here.</h2>
-                        <p className="text-gray-600 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-foreground mb-4">Start your project here</h2>
+                        <p className="text-muted-foreground max-w-2xl mx-auto">
                             Choose from flexible packages designed for startups and growing businesses. All prices include free consultation and scope review.
                         </p>
                     </div>
 
                     {/* Main Starter Sprint Package */}
-                    <div className="w-full max-w-md mb-8">
-                        <Card className="border border-gray-200 shadow-lg">
-                            <CardHeader className="text-center pb-4">
-                                <Badge variant="secondary" className="mb-2 mx-auto w-fit">🚀 Most Popular</Badge>
-                                <CardTitle className="text-2xl font-bold text-gray-900">Starter Sprint</CardTitle>
-                                <div className="flex justify-center gap-2 text-sm text-gray-500 mb-4">
-                                    <span>2-4 weeks</span>
-                                    <span>•</span>
-                                    <span>Fixed price</span>
-                                    <span>•</span>
-                                    <span>Full-stack solution</span>
-                                </div>
-                                <p className="text-sm text-gray-600 mb-4">
-                                    Perfect for startups → Build MVPs, SaaS dashboards, or marketing sites.
-                                </p>
-                                <div className="text-3xl font-bold text-gray-900">$1,200 – $4,000</div>
-                            </CardHeader>
-                            <CardContent>
-                                <Link href={"mailto:hello@anshupatel.in"}>
-                                    <Button className="w-full mb-4">
-                                        Book your free review
-                                    </Button>
-                                </Link>
-                                <p className="text-xs text-center text-gray-500 mb-6">
-                                    Free consultation to define scope and finalize pricing
-                                </p>
+                    <div className="flex justify-center mb-12">
+                        <div className="w-full max-w-md">
+                            <Card className="border shadow-lg rounded-2xl overflow-hidden">
+                                <CardHeader className="text-center pb-6 bg-muted/30">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-4">
+                                        <Badge variant="outline">2-4 weeks</Badge>
+                                        <Badge variant="outline">Fixed scope</Badge>
+                                        <Badge variant="outline">Fixed price after review</Badge>
+                                    </div>
 
-                                {/* Features List */}
-                                <div className="space-y-3 text-sm">
-                                    <div className="flex items-start gap-2">
-                                        <span className="text-green-500 mt-0.5">✅</span>
-                                        <span className="text-gray-700">Landing page or MVP build</span>
-                                    </div>
-                                    <div className="flex items-start gap-2">
-                                        <span className="text-green-500 mt-0.5">✅</span>
-                                        <span className="text-gray-700">SEO setup for growth</span>
-                                    </div>
-                                    <div className="flex items-start gap-2">
-                                        <span className="text-green-500 mt-0.5">✅</span>
-                                        <span className="text-gray-700">API integrations + Database</span>
-                                    </div>
-                                    <div className="flex items-start gap-2">
-                                        <span className="text-green-500 mt-0.5">✅</span>
-                                        <span className="text-gray-700">Clean UI with React/Next.js</span>
-                                    </div>
-                                    <div className="flex items-start gap-2">
-                                        <span className="text-green-500 mt-0.5">✅</span>
-                                        <span className="text-gray-700">Mobile-responsive design</span>
-                                    </div>
-                                    <div className="flex items-start gap-2">
-                                        <span className="text-green-500 mt-0.5">✅</span>
-                                        <span className="text-gray-700">2 rounds of revisions included</span>
-                                    </div>
-                                    <div className="flex items-start gap-2">
-                                        <span className="text-green-500 mt-0.5">✅</span>
-                                        <span className="text-gray-700">1-week post-launch support</span>
-                                    </div>
-                                </div>
+                                    <CardTitle className="text-2xl font-bold text-foreground mb-4">Starter Sprint</CardTitle>
 
-                                <div className="mt-6 pt-4 border-t border-gray-100">
-                                    <p className="font-medium text-gray-900 mb-2">Technical stack included:</p>
-                                    <div className="space-y-2 text-sm text-gray-700">
-                                        <div className="flex items-start gap-2">
-                                            <span className="text-blue-500 mt-0.5">⚡</span>
-                                            <span>Modern frameworks (React, Next.js, Node.js)</span>
+                                    <div className="mb-4">
+                                        <span className="text-sm font-medium text-muted-foreground">Great for: </span>
+                                        <span className="text-sm text-foreground">Build MVPs, SaaS dashboards, or marketing sites</span>
+                                    </div>
+
+                                    <div className="mb-6">
+                                        <p className="text-sm text-muted-foreground mb-2">Typical investment*</p>
+                                        <div className="text-3xl font-bold text-foreground">$1,200 – $4,000</div>
+                                    </div>
+
+                                    <Link href={"mailto:hello@anshupatel.in"}>
+                                        <Button className="w-full mb-4">
+                                            Book your free review
+                                        </Button>
+                                    </Link>
+
+                                    <p className="text-xs text-center text-muted-foreground">
+                                        Free consultation to define scope and finalize pricing
+                                    </p>
+                                </CardHeader>
+
+                                <CardContent className="px-6 pb-6">
+                                    {/* Features List */}
+                                    <div className="space-y-4 text-sm mb-6">
+                                        <div className="flex items-start gap-3">
+                                            <div className="w-4 h-4 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                                <CheckCircle className="w-3 h-3 text-primary" />
+                                            </div>
+                                            <div>
+                                                <div className="font-medium text-foreground">Landing page or MVP build</div>
+                                                <div className="text-xs text-muted-foreground">Individual design proposal made for your requirements</div>
+                                            </div>
                                         </div>
-                                        <div className="flex items-start gap-2">
-                                            <span className="text-blue-500 mt-0.5">⚡</span>
-                                            <span>Database setup (MongoDB, PostgreSQL, or Firebase)</span>
+
+                                        <div className="flex items-start gap-3">
+                                            <div className="w-4 h-4 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                                <CheckCircle className="w-3 h-3 text-primary" />
+                                            </div>
+                                            <span className="text-foreground">SEO setup for growth</span>
                                         </div>
-                                        <div className="flex items-start gap-2">
-                                            <span className="text-blue-500 mt-0.5">⚡</span>
-                                            <span>Deployment & hosting configuration</span>
+
+                                        <div className="flex items-start gap-3">
+                                            <div className="w-4 h-4 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                                <CheckCircle className="w-3 h-3 text-primary" />
+                                            </div>
+                                            <span className="text-foreground">API integrations + Database</span>
                                         </div>
-                                        <div className="flex items-start gap-2">
-                                            <span className="text-blue-500 mt-0.5">⚡</span>
-                                            <span>Performance optimization & security</span>
+
+                                        <div className="flex items-start gap-3">
+                                            <div className="w-4 h-4 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                                <CheckCircle className="w-3 h-3 text-primary" />
+                                            </div>
+                                            <span className="text-foreground">Clean UI with React/Next.js</span>
+                                        </div>
+
+                                        <div className="flex items-start gap-3">
+                                            <div className="w-4 h-4 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                                <CheckCircle className="w-3 h-3 text-primary" />
+                                            </div>
+                                            <div>
+                                                <div className="text-foreground">Mobile-responsive design</div>
+                                                <div className="text-xs text-muted-foreground">If applicable to your project</div>
+                                            </div>
+                                        </div>
+
+                                        <div className="flex items-start gap-3">
+                                            <div className="w-4 h-4 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                                <CheckCircle className="w-3 h-3 text-primary" />
+                                            </div>
+                                            <span className="text-foreground">2 rounds of revisions included</span>
+                                        </div>
+
+                                        <div className="flex items-start gap-3">
+                                            <div className="w-4 h-4 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                                <CheckCircle className="w-3 h-3 text-primary" />
+                                            </div>
+                                            <span className="text-foreground">1-week post-launch support</span>
                                         </div>
                                     </div>
-                                </div>
-                            </CardContent>
-                        </Card>
+
+                                    <div className="border-t pt-6">
+                                        <h4 className="font-semibold text-foreground mb-4">Plus, included:</h4>
+                                        <div className="space-y-3 text-sm text-muted-foreground">
+                                            <div className="flex items-start gap-3">
+                                                <div className="w-4 h-4 rounded-full bg-muted flex items-center justify-center mt-0.5">
+                                                    <CheckCircle className="w-3 h-3 text-muted-foreground" />
+                                                </div>
+                                                <span>Modern frameworks (React, Next.js, Node.js)</span>
+                                            </div>
+                                            <div className="flex items-start gap-3">
+                                                <div className="w-4 h-4 rounded-full bg-muted flex items-center justify-center mt-0.5">
+                                                    <CheckCircle className="w-3 h-3 text-muted-foreground" />
+                                                </div>
+                                                <span>Database setup (MongoDB, PostgreSQL, or Firebase)</span>
+                                            </div>
+                                            <div className="flex items-start gap-3">
+                                                <div className="w-4 h-4 rounded-full bg-muted flex items-center justify-center mt-0.5">
+                                                    <CheckCircle className="w-3 h-3 text-muted-foreground" />
+                                                </div>
+                                                <span>Deployment & hosting configuration</span>
+                                            </div>
+                                            <div className="flex items-start gap-3">
+                                                <div className="w-4 h-4 rounded-full bg-muted flex items-center justify-center mt-0.5">
+                                                    <CheckCircle className="w-3 h-3 text-muted-foreground" />
+                                                </div>
+                                                <span>Performance optimization & security</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </div>
                     </div>
 
                     {/* Smaller Needs Section */}
-                    <div className="w-full max-w-4xl mb-8">
-                        <div className="text-center mb-6">
-                            <h3 className="text-xl font-bold text-gray-900 mb-2">Smaller Needs?</h3>
-                            <p className="text-gray-600">Quick solutions for specific requirements. Perfect for testing ideas or enhancing existing projects.</p>
+                    <div className="w-full max-w-4xl mx-auto mb-12">
+                        <div className="text-center mb-8">
+                            <h3 className="text-xl font-bold text-foreground mb-2">Smaller Needs?</h3>
+                            <p className="text-muted-foreground">Quick solutions for specific requirements. Perfect for testing ideas or enhancing existing projects.</p>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-6">
                             {/* Simple Landing Page */}
-                            <Card className="border border-gray-200">
+                            <Card className="border">
                                 <CardHeader>
-                                    <CardTitle className="text-lg font-bold">Simple Landing Page</CardTitle>
-                                    <p className="text-sm text-gray-600">
+                                    <CardTitle className="text-lg font-bold text-foreground">Simple Landing Page</CardTitle>
+                                    <p className="text-sm text-muted-foreground">
                                         Great for: product launches • lead generation • marketing campaigns
                                     </p>
-                                    <div className="text-xl font-bold text-gray-900">$399 – $999</div>
+                                    <div className="text-xl font-bold text-foreground">$399 – $999</div>
                                 </CardHeader>
                                 <CardContent>
                                     <Link href={"mailto:hello@anshupatel.in"}>
@@ -339,33 +381,33 @@ export default function LandingPage() {
                                     </Link>
                                     <div className="space-y-2 text-sm">
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Single-page responsive design</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Single-page responsive design</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Contact forms & CTA optimization</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Contact forms & CTA optimization</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Basic SEO setup</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Basic SEO setup</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Fast loading & mobile-optimized</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Fast loading & mobile-optimized</span>
                                         </div>
                                     </div>
                                 </CardContent>
                             </Card>
 
                             {/* SEO Audit & Optimization */}
-                            <Card className="border border-gray-200">
+                            <Card className="border">
                                 <CardHeader>
-                                    <CardTitle className="text-lg font-bold">SEO Audit & Optimization</CardTitle>
-                                    <p className="text-sm text-gray-600">
+                                    <CardTitle className="text-lg font-bold text-foreground">SEO Audit & Optimization</CardTitle>
+                                    <p className="text-sm text-muted-foreground">
                                         Great for: existing websites • traffic boost • search ranking improvement
                                     </p>
-                                    <div className="text-xl font-bold text-gray-900">$299 – $799</div>
+                                    <div className="text-xl font-bold text-foreground">$299 – $799</div>
                                 </CardHeader>
                                 <CardContent>
                                     <Link href={"mailto:hello@anshupatel.in"}>
@@ -375,20 +417,20 @@ export default function LandingPage() {
                                     </Link>
                                     <div className="space-y-2 text-sm">
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Complete SEO audit report</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Complete SEO audit report</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Keyword research & strategy</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Keyword research & strategy</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Technical SEO fixes</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Technical SEO fixes</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Content optimization recommendations</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Content optimization recommendations</span>
                                         </div>
                                     </div>
                                 </CardContent>
@@ -397,16 +439,16 @@ export default function LandingPage() {
                     </div>
 
                     {/* Additional Services */}
-                    <div className="w-full max-w-4xl">
+                    <div className="w-full max-w-4xl mx-auto">
                         <div className="grid md:grid-cols-2 gap-6">
                             {/* WordPress Business Website */}
-                            <Card className="border border-gray-200">
+                            <Card className="border">
                                 <CardHeader>
-                                    <CardTitle className="text-lg font-bold">WordPress Business Website</CardTitle>
-                                    <p className="text-sm text-gray-600">
+                                    <CardTitle className="text-lg font-bold text-foreground">WordPress Business Website</CardTitle>
+                                    <p className="text-sm text-muted-foreground">
                                         Great for: small businesses • agencies • content-heavy sites
                                     </p>
-                                    <div className="text-xl font-bold text-gray-900">$699 – $1,500</div>
+                                    <div className="text-xl font-bold text-foreground">$699 – $1,500</div>
                                 </CardHeader>
                                 <CardContent>
                                     <Link href={"mailto:hello@anshupatel.in"}>
@@ -416,33 +458,33 @@ export default function LandingPage() {
                                     </Link>
                                     <div className="space-y-2 text-sm">
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Custom WordPress theme development</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Custom WordPress theme development</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Content management system setup</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Content management system setup</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">SEO-optimized structure</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">SEO-optimized structure</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Security & backup configuration</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Security & backup configuration</span>
                                         </div>
                                     </div>
                                 </CardContent>
                             </Card>
 
                             {/* Custom Web App Module */}
-                            <Card className="border border-gray-200">
+                            <Card className="border">
                                 <CardHeader>
-                                    <CardTitle className="text-lg font-bold">Custom Web App Module</CardTitle>
-                                    <p className="text-sm text-gray-600">
+                                    <CardTitle className="text-lg font-bold text-foreground">Custom Web App Module</CardTitle>
+                                    <p className="text-sm text-muted-foreground">
                                         Great for: adding features • integrations • custom functionality
                                     </p>
-                                    <div className="text-xl font-bold text-gray-900">$500 – $2,000</div>
+                                    <div className="text-xl font-bold text-foreground">$500 – $2,000</div>
                                 </CardHeader>
                                 <CardContent>
                                     <Link href={"mailto:hello@anshupatel.in"}>
@@ -452,20 +494,20 @@ export default function LandingPage() {
                                     </Link>
                                     <div className="space-y-2 text-sm">
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Custom feature development</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Custom feature development</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Third-party API integrations</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Third-party API integrations</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Database design & optimization</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Database design & optimization</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <span className="text-green-500 mt-0.5">✓</span>
-                                            <span className="text-gray-700">Testing & quality assurance</span>
+                                            <CheckCircle className="w-4 h-4 text-primary mt-0.5" />
+                                            <span className="text-foreground">Testing & quality assurance</span>
                                         </div>
                                     </div>
                                 </CardContent>
@@ -477,14 +519,14 @@ export default function LandingPage() {
             </section>
 
             {/* FAQs Section */}
-            <section className="mx-auto ">
-                <div className="max-w-[1024px] border-x-1 border-b-1 border-[#e0e1ea] px-3 py-16 flex flex-col items-center justify-between mx-auto">
+            <section className="py-24 border-t">
+                <div className="container mx-auto max-w-4xl px-6">
 
                     {/* Header */}
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Your <span className="text-red-500">?</span> questions <br />
-                            answered <span className="text-green-500">✓</span>
+                        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                            Your <span className="text-destructive">?</span> questions <br />
+                            answered <span className="text-primary">✓</span>
                         </h2>
                         <p className="text-lg text-muted-foreground">
                             Common questions about working together and project details
@@ -492,7 +534,7 @@ export default function LandingPage() {
                     </div>
 
                     {/* FAQ Items */}
-                    <div className="w-full max-w-3xl">
+                    <div className="w-full max-w-3xl mx-auto">
                         <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
                             <AccordionItem value="item-1">
                                 <AccordionTrigger className="text-left">
@@ -566,64 +608,62 @@ export default function LandingPage() {
             </section>
 
             {/* Final CTA Section */}
-            <section className="mx-auto">
-                <div className="max-w-[1024px] border-x-1 border-b-1 border-[#e0e1ea] px-3 py-16 flex flex-col items-center justify-between mx-auto">
-
-                    {/* Collaborate Badge */}
-                    <div className="mb-8">
-                        <Badge variant="outline" className="px-6 py-2 text-sm font-medium border-gray-300 text-gray-600 bg-white shadow-sm">
-                            🤝 Collaborate
+            <section className="py-24 bg-muted/30">
+                <div className="container mx-auto max-w-4xl px-6">
+                    <div className="text-center space-y-8">
+                        {/* Collaborate Badge */}
+                        <Badge variant="outline">
+                            <Handshake className="w-4 h-4 mr-2" />
+                            Collaborate
                         </Badge>
-                    </div>
 
-                    {/* Main Heading */}
-                    <div className="text-center mb-8">
-                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-                            Get a free <span className="text-blue-500">💎</span> project review <br />
-                            within 48 hours <span className="text-red-500">⏰</span>
-                        </h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Fill out the form → I'll audit your idea/website/app and suggest improvements.
-                        </p>
-                    </div>
+                        {/* Main Heading */}
+                        <div className="space-y-4">
+                            <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
+                                Get a free project review <br />
+                                within 48 hours
+                            </h2>
+                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                                Fill out the form → I'll audit your idea/website/app and suggest improvements.
+                            </p>
+                        </div>
 
-                    {/* Contact Form */}
-                    <div className="w-full max-w-lg">
-                        <Card className="border-0 shadow-lg bg-white">
+                        {/* Contact Form */}
+                        <Card className="shadow-lg">
                             <CardContent className="p-8">
-                                <h3 className="text-xl font-semibold text-gray-900 mb-6">
+                                <h3 className="text-xl font-semibold text-foreground mb-6">
                                     Tell me about your project
                                 </h3>
 
                                 <form className="space-y-4">
                                     <div className="grid md:grid-cols-2 gap-4">
                                         <div>
-                                            <label className="block text-sm font-medium text-blue-600 mb-2">
+                                            <label className="block text-sm font-medium text-foreground mb-2">
                                                 Name
                                             </label>
                                             <input
                                                 type="text"
                                                 placeholder="Your name"
-                                                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                                                className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                                             />
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium text-blue-600 mb-2">
+                                            <label className="block text-sm font-medium text-foreground mb-2">
                                                 Email
                                             </label>
                                             <input
                                                 type="email"
                                                 placeholder="your@email.com"
-                                                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                                                className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                                             />
                                         </div>
                                     </div>
 
                                     <div>
-                                        <label className="block text-sm font-medium text-blue-600 mb-2">
+                                        <label className="block text-sm font-medium text-foreground mb-2">
                                             Project Type
                                         </label>
-                                        <select className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all">
+                                        <select className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
                                             <option value="">Select project type</option>
                                             <option value="landing-page">Landing Page</option>
                                             <option value="web-app">Web Application</option>
@@ -634,17 +674,6 @@ export default function LandingPage() {
                                         </select>
                                     </div>
 
-                                    <div>
-                                        <label className="block text-sm font-medium text-blue-600 mb-2">
-                                            Tell me about your project
-                                        </label>
-                                        <textarea
-                                            rows={4}
-                                            placeholder="Describe your project, goals, and what you need help with..."
-                                            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
-                                        ></textarea>
-                                    </div>
-
                                     <Button
                                         type="submit"
                                         className="w-full py-4"
@@ -653,36 +682,35 @@ export default function LandingPage() {
                                     </Button>
                                 </form>
 
-                                <p className="text-sm text-gray-500 text-center mt-4">
+                                <p className="text-sm text-muted-foreground text-center mt-4">
                                     I'll get back to you within 48 hours with actionable insights
                                 </p>
                             </CardContent>
                         </Card>
-                    </div>
 
-                    {/* Social Links */}
-                    <div className="flex items-center justify-center gap-4 mt-12">
-                        <a href="#" className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">
-                            <span className="text-gray-600">𝕏</span>
-                        </a>
-                        <a href="#" className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">
-                            <span className="text-gray-600">in</span>
-                        </a>
-                        <a href="#" className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">
-                            <span className="text-gray-600">@</span>
-                        </a>
-                        <a href="#" className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">
-                            <span className="text-gray-600">📧</span>
-                        </a>
-                    </div>
+                        {/* Social Links */}
+                        <div className="flex items-center justify-center gap-4">
+                            <a href="#" className="w-10 h-10 bg-muted rounded-full flex items-center justify-center hover:bg-muted/80 transition-colors">
+                                <Twitter className="w-4 h-4 text-muted-foreground" />
+                            </a>
+                            <a href="#" className="w-10 h-10 bg-muted rounded-full flex items-center justify-center hover:bg-muted/80 transition-colors">
+                                <Linkedin className="w-4 h-4 text-muted-foreground" />
+                            </a>
+                            <a href="#" className="w-10 h-10 bg-muted rounded-full flex items-center justify-center hover:bg-muted/80 transition-colors">
+                                <MessageCircle className="w-4 h-4 text-muted-foreground" />
+                            </a>
+                            <a href="#" className="w-10 h-10 bg-muted rounded-full flex items-center justify-center hover:bg-muted/80 transition-colors">
+                                <Mail className="w-4 h-4 text-muted-foreground" />
+                            </a>
+                        </div>
 
-                    {/* Footer */}
-                    <div className="text-center mt-12 pt-8 border-t border-gray-200">
-                        <p className="text-sm text-gray-500">
-                            © 2025 Anshu Patel. Built with passion for startups and growing businesses.
-                        </p>
+                        {/* Footer */}
+                        <div className="text-center pt-8 border-t">
+                            <p className="text-sm text-muted-foreground">
+                                © 2025 Anshu Patel. Built with passion for startups and growing businesses.
+                            </p>
+                        </div>
                     </div>
-
                 </div>
             </section>
         </div>

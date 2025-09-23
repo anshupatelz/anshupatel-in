@@ -48,7 +48,6 @@
   --tracking-normal: 0rem;
   --spacing: 0.3rem;
 
-  /* Custom Properties */
   --primary-gradient-start: oklch(67.834% 0.17008 273.608);
   --primary-gradient-end: oklch(60.068% 0.17134 272.676);
 }

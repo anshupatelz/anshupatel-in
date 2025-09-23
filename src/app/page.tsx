@@ -486,99 +486,73 @@ export default function LandingPage() {
                             Your <span className="text-red-500">?</span> questions <br />
                             answered <span className="text-green-500">✓</span>
                         </h2>
-                        <p className="text-lg text-gray-600">
+                        <p className="text-lg text-muted-foreground">
                             Common questions about working together and project details
                         </p>
                     </div>
 
                     {/* FAQ Items */}
-                    <div className="w-full max-w-3xl space-y-4">
+                    <div className="w-full max-w-3xl">
+                        <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
+                            <AccordionItem value="item-1">
+                                <AccordionTrigger className="text-left">
+                                    How do I know if my idea is possible?
+                                </AccordionTrigger>
+                                <AccordionContent>
+                                    I'll review your idea for free and suggest the right tech stack + roadmap. Whether it's a simple landing page, app design, UX research, social media assets, pitch decks, interactive prototypes, quick interface demos, micro-interactions (Lottie/Rive), and more. It's always a good idea to double-check with me if you're unsure. If it's not related to logo or branding, there's a good chance I can help!
+                                </AccordionContent>
+                            </AccordionItem>
 
-                        {/* FAQ 1 - Featured/Open */}
-                        <div className="bg-white border border-gray-200 rounded-lg shadow-sm">
-                            <div className="p-6">
-                                <div className="flex items-start gap-3 mb-4">
-                                    <span className="text-yellow-500 text-lg mt-1">⭐</span>
-                                    <h3 className="text-lg font-semibold text-gray-900 flex-1">
-                                        How do I know if my idea is possible?
-                                    </h3>
-                                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                                        <span className="text-white text-sm">−</span>
-                                    </div>
-                                </div>
-                                <div className="bg-blue-500 rounded-lg p-4 ml-8">
-                                    <p className="text-white leading-relaxed">
-                                        I'll review your idea for free and suggest the right tech stack + roadmap. Whether it's a simple landing page, app design, UX research, social media assets, pitch decks, interactive prototypes, quick interface demos, micro-interactions (Lottie/Rive), and more. It's always a good idea to double-check with me if you're unsure. If it's not related to logo or branding, there's a good chance I can help!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* FAQ 2 */}
-                        <div className="bg-gray-50 border border-gray-200 rounded-lg">
-                            <div className="p-6 flex items-center justify-between cursor-pointer hover:bg-gray-100 transition-colors">
-                                <h3 className="text-lg font-medium text-gray-700">
+                            <AccordionItem value="item-2">
+                                <AccordionTrigger className="text-left">
                                     Do you also handle SEO/marketing?
-                                </h3>
-                                <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
-                                    <span className="text-gray-600 text-lg">+</span>
-                                </div>
-                            </div>
-                        </div>
+                                </AccordionTrigger>
+                                <AccordionContent>
+                                    Yes! I handle both technical SEO (site speed, structure, meta tags) and basic content optimization. For education/travel businesses, I understand what search terms your customers use and how to rank for them. However, for advanced marketing campaigns or paid ads, I can recommend specialists while I focus on the technical foundation.
+                                </AccordionContent>
+                            </AccordionItem>
 
-                        {/* FAQ 3 */}
-                        <div className="bg-gray-50 border border-gray-200 rounded-lg">
-                            <div className="p-6 flex items-center justify-between cursor-pointer hover:bg-gray-100 transition-colors">
-                                <h3 className="text-lg font-medium text-gray-700">
+                            <AccordionItem value="item-3">
+                                <AccordionTrigger className="text-left">
                                     What's the timeline?
-                                </h3>
-                                <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
-                                    <span className="text-gray-600 text-lg">+</span>
-                                </div>
-                            </div>
-                        </div>
+                                </AccordionTrigger>
+                                <AccordionContent>
+                                    Most projects are completed within 2-4 weeks depending on scope. Simple landing pages take 1-2 weeks, while full web apps or SaaS platforms take 3-4 weeks. I provide weekly updates and you can track progress throughout. Rush projects can be accommodated with a 25% urgency fee.
+                                </AccordionContent>
+                            </AccordionItem>
 
-                        {/* FAQ 4 */}
-                        <div className="bg-gray-50 border border-gray-200 rounded-lg">
-                            <div className="p-6 flex items-center justify-between cursor-pointer hover:bg-gray-100 transition-colors">
-                                <h3 className="text-lg font-medium text-gray-700">
+                            <AccordionItem value="item-4">
+                                <AccordionTrigger className="text-left">
                                     How will our collaboration happen?
-                                </h3>
-                                <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
-                                    <span className="text-gray-600 text-lg">+</span>
-                                </div>
-                            </div>
-                        </div>
+                                </AccordionTrigger>
+                                <AccordionContent>
+                                    We start with a free consultation call to understand your needs. Then I provide a detailed proposal with timeline and pricing. During development, you'll get weekly progress updates via email/Slack, with live previews to review. I'm available for quick questions throughout the project.
+                                </AccordionContent>
+                            </AccordionItem>
 
-                        {/* FAQ 5 */}
-                        <div className="bg-gray-50 border border-gray-200 rounded-lg">
-                            <div className="p-6 flex items-center justify-between cursor-pointer hover:bg-gray-100 transition-colors">
-                                <h3 className="text-lg font-medium text-gray-700">
+                            <AccordionItem value="item-5">
+                                <AccordionTrigger className="text-left">
                                     How will I know the final investment size?
-                                </h3>
-                                <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
-                                    <span className="text-gray-600 text-lg">+</span>
-                                </div>
-                            </div>
-                        </div>
+                                </AccordionTrigger>
+                                <AccordionContent>
+                                    After our free consultation, I'll provide a detailed fixed-price quote with no hidden fees. The price includes all development, revisions, and 1-week post-launch support. You'll know the exact cost upfront before any work begins. Payment is typically 50% upfront, 50% on completion.
+                                </AccordionContent>
+                            </AccordionItem>
 
-                        {/* FAQ 6 */}
-                        <div className="bg-gray-50 border border-gray-200 rounded-lg">
-                            <div className="p-6 flex items-center justify-between cursor-pointer hover:bg-gray-100 transition-colors">
-                                <h3 className="text-lg font-medium text-gray-700">
+                            <AccordionItem value="item-6">
+                                <AccordionTrigger className="text-left">
                                     How can I pay?
-                                </h3>
-                                <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
-                                    <span className="text-gray-600 text-lg">+</span>
-                                </div>
-                            </div>
-                        </div>
-
+                                </AccordionTrigger>
+                                <AccordionContent>
+                                    I accept bank transfers, PayPal, and Stripe (credit/debit cards). For international clients, PayPal and Stripe work best. Payment is split into milestones: 50% to start the project and 50% upon completion. For larger projects over $3000, we can arrange additional milestone payments.
+                                </AccordionContent>
+                            </AccordionItem>
+                        </Accordion>
                     </div>
 
                     {/* Bottom CTA */}
                     <div className="text-center mt-12">
-                        <p className="text-gray-600 mb-6">
+                        <p className="text-muted-foreground mb-6">
                             Still have questions? Let's talk about your project!
                         </p>
                         <Link href={"mailto:hello@anshupatel.in"}>
@@ -592,7 +566,7 @@ export default function LandingPage() {
             </section>
 
             {/* Final CTA Section */}
-            <section className="bg-gray-50">
+            <section className="mx-auto">
                 <div className="max-w-[1024px] border-x-1 border-b-1 border-[#e0e1ea] px-3 py-16 flex flex-col items-center justify-between mx-auto">
 
                     {/* Collaborate Badge */}

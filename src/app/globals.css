@@ -225,48 +225,38 @@ h6 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--foreground);
-  margin-bottom: 0.75rem;
-  font-family: "Inter Tight", sans-serif;
-  letter-spacing: -0.025em;
+  margin-bottom: 0.5rem;
+  font-family: "Inter Tight";
 }
 
-h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.04em;
+/* Custom Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-h3 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 600;
-  line-height: 1.2;
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
 }
 
-/* Body text styles */
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  font-weight: 400;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  font-weight: 400;
-}
-
-/* Lead text for hero sections */
-.text-lead {
-  font-size: clamp(1.125rem, 2vw, 1.375rem);
-  line-height: 1.6;
-  font-weight: 400;
-  color: var(--muted-foreground);
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+  opacity: 0;
 }

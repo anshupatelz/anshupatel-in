@@ -1,4 +1,17 @@
 import './globals.css';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Anshu Patel - Full Stack Developer',
+  description: 'Full-stack developer specializing in modern web applications. Building scalable, user-centric digital solutions with React, Next.js, and TypeScript.',
+  keywords: ['Full Stack Developer', 'Web Developer', 'React', 'Next.js', 'TypeScript', 'Node.js'],
+  authors: [{ name: 'Anshu Patel' }],
+  openGraph: {
+    title: 'Anshu Patel - Full Stack Developer',
+    description: 'Building modern web applications with React, Next.js, and TypeScript',
+    type: 'website',
+  }
+}
 
 export default function LandingLayout({
   children,
